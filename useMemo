@@ -1,0 +1,28 @@
+import { useState, useMemo } from 'react';
+import './App.css';
+function App() {
+  const[count,setCount] =useState(0);
+  const[item,setItem]=useState(0);
+  const multicount = useMemo(() => {
+    console.warn("multicount");
+    return count * 5;
+}, [count]);
+
+  
+  return (
+    <div>
+      <h1>USe Memo</h1>
+      <h1>count{count}</h1>
+      <h1>item:{item}</h1>
+      <h1> multicount:{multicount}</h1>
+      <button onClick={()=>setCount(count+1)}>count</button>
+      <button onClick={()=>setItem(item+1)}>item</button>
+      </div>
+    
+
+  
+  );
+
+}
+
+export default App;
