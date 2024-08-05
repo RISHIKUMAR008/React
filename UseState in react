@@ -5,7 +5,7 @@ function App() {
   const[item,setItem]=useState(0);
   return (
     <div>
-      <h1>USe Memo</h1>
+      <h1>USe State</h1>
       <h1>count{count}</h1>
       <h1>item:{item}</h1>
       <button onClick={()=>setCount(count+1)}>count</button>
