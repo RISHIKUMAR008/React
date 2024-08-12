@@ -1,0 +1,41 @@
+import './App.css';
+import react,{useState} from 'react'
+function App() {
+ const [name,setname]=useState("");
+ const [email,setemail]=useState("");
+ const [mobile,setmobile]=useState("");
+ function saveuser(){
+  console.warn(name,email,mobile);
+  let data={name,email,mobile}
+  fetch('http://localhost:3000/posts', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      mobile: mobile
+    })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+}
+
+  return (
+    <div>
+      <h1>post api</h1>
+      <input type='text' value={name}name='name' placeholder='name'onChange={(e)=>{setname(e.target.value)}}/><br/><br/>      
+      <input type='text' value={email}name='email'placeholder='email'onChange={(e)=>{setemail(e.target.value)}}/><br/><br/>
+      <input type='text' value={mobile}name='mobile'placeholder='mobile'onChange={(e)=>{setmobile(e.target.value)}}/><br/><br/>
+
+<button onClick={saveuser}>save</button>
+
+    </div>
+  );
+}
+
+export default App;
+
