@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "roshan",
+      "email": "roshan@test.com",
+      "mobile": 98966
+    },
+    {
+      "id": "2",
+      "name": "rishi",
+      "email": "rish@test.com",
+      "mobile": 8888
+    },
+    {
+      "id": "1",
+      "name": "shuham",
+      "email": "shuham@test.com",
+      "mobile": 3333
+    },
+    {
+      "id": "d1ea",
+      "name": "RISHI KUMAR",
+      "email": "rishikumarjordan32@gmail.com",
+      "mobile": "07896038913"
+    },
+    {
+      "id": "3720",
+      "name": "RISHI KUMAR",
+      "email": "rishikumarjordan32@gmail.com",
+      "mobile": "07896038913"
+    },
+    {
+      "id": "246b",
+      "name": "roshan KUMAR",
+      "email": "roshan@test.com",
+      "mobile": "8888333"
+    },
+    {
+      "id": "60a8",
+      "name": "roshan KUMAR",
+      "email": "roshan@test.com",
+      "mobile": "8888333"
+    },
+    {
+      "id": "0331",
+      "name": "roshan KUMAR",
+      "email": "roshan@test.com",
+      "mobile": "8888333"
+    }
+  ]
+}
