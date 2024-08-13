@@ -1,0 +1,40 @@
+import './App.css';
+import React from 'react'
+import Hero from './Hero'
+function App() {
+  const [count,setCount]=React.useState(0)
+  return (
+    <div >
+      <Hero count={count}/>
+      <button onClick={()=>{setCount( count+1 )}} >Update Counter</button>
+    </div>
+  );
+}
+
+
+
+export default App;
+
+
+
+/- - - - - - - - - - - - -- - - - -- - - - - - - - -- -- --/
+
+
+import React,{useEffect,useRef} from 'react'
+function Hero(props)
+{
+    const lastVal=useRef();
+    useEffect(()=>{
+        lastVal.current=props.count
+    })
+    const previousProps=lastVal.current
+    return(
+        <div>
+            <h1>Count is  : {props.count}</h1>
+            <h1>previous Props is  : {previousProps}</h1>
+
+        </div>
+    )
+}
+
+export default Hero
