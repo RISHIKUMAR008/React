@@ -1,0 +1,8 @@
+<CoreConcept
+  title={CORE_CONCEPTS[0].title}
+  description={CORE_CONCEPTS[0].description}  
+  image={CORE_CONCEPTS[0].image} />
+or
+
+<CoreConcept
+  {...CORE_CONCEPTS[0]} />
